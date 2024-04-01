@@ -53,6 +53,7 @@
             document.body.appendChild(commentDiv);
             for (const comment of value) {
                 let divCom = document.createElement('div');
+                divCom.innerHTML = '';
                 let postId = document.createElement('p');
                 postId.innerText = 'Id of the post: ' + comment.postId;
                 let commentId = document.createElement('p');
